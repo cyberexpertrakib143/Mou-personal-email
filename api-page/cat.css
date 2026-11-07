@@ -1,0 +1,92 @@
+/* ===== Cat gate + scroll cat ===== */
+#loadingScreen.gate{background:radial-gradient(circle at 50% 45%,rgba(8,14,26,.35),rgba(3,5,10,.82) 75%);overflow:hidden;transition:opacity .7s ease,transform .7s ease;gap:0}
+#loadingScreen.gate.leaving{opacity:0;transform:scale(1.08);pointer-events:none}
+.gate-stage{position:relative;width:min(62vw,250px);margin-top:-6vh}
+.gate-cat{width:100%;transform:translateX(-125vw);cursor:pointer;-webkit-tap-highlight-color:transparent;position:relative;z-index:2}
+.gate-cat.in{transform:translateX(0);transition:transform 2.9s cubic-bezier(.25,.7,.35,1)}
+.gate-cat.out{transform:translateX(125vw);transition:transform 1.1s cubic-bezier(.5,0,.9,.4)}
+.gate-shadow{position:absolute;left:12%;right:12%;bottom:-6px;height:16px;border-radius:50%;background:radial-gradient(rgba(0,0,0,.55),transparent 70%);z-index:1;opacity:0;transition:opacity .6s}
+.gate-stage.seated .gate-shadow{opacity:1}
+.gate-hint{margin:26px 0 0;color:#0f0;letter-spacing:3px;font-size:13px;text-transform:uppercase;opacity:0;transition:opacity .6s;text-align:center;pointer-events:none}
+.gate-hint.show{opacity:.95;animation:hintPulse 1.6s ease-in-out infinite}
+@keyframes hintPulse{50%{opacity:.45;transform:translateY(3px)}}
+.hair{position:absolute;width:2px;height:15px;border-radius:2px;pointer-events:none;opacity:0;z-index:3;animation:hairUp var(--t,3s) ease-out forwards}
+@keyframes hairUp{0%{opacity:0;transform:translate(0,0) rotate(var(--r0,0deg))}12%{opacity:.95}100%{opacity:0;transform:translate(var(--dx,10px),-180px) rotate(var(--r1,40deg))}}
+.puff{position:absolute;bottom:2px;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.22);pointer-events:none;animation:puff .9s ease-out forwards;z-index:3}
+@keyframes puff{from{opacity:.8;transform:translate(0,0) scale(.3)}to{opacity:0;transform:translate(var(--px,0),-18px) scale(2.2)}}
+.heartfx{position:absolute;pointer-events:none;z-index:6;font-size:var(--s,22px);animation:heartfx 1.4s ease-out forwards}
+@keyframes heartfx{0%{opacity:0;transform:translate(0,0) scale(.4)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx,0),-120px) scale(1.2)}}
+
+/* cat svg (original neon-outline cat) */
+.pcat .mcat{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 0 5px rgba(0,255,0,.55))}
+.pcat .mcat ellipse,.pcat .mcat circle,.pcat .mcat polygon,.pcat .mcat rect{fill:#0b1a0f;stroke:#0f0;stroke-width:1.6;stroke-linejoin:round}
+.pcat .cat-tail{fill:none;stroke:#0f0;stroke-width:4;stroke-linecap:round}
+.pcat .mcat .eye,.pcat .mcat .nose{fill:#0f0;stroke:none}
+.pcat .mcat .line,.pcat .mcat .line path{fill:none;stroke:#0f0;stroke-width:1.2;stroke-linecap:round}
+.pcat .mcat path.line{fill:none;stroke:#0f0;stroke-width:.6}
+.pcat .mcat .hrt{fill:#0f0;stroke:none}
+.pcat .mcat text{fill:#0f0;stroke:none}
+.pcat .p-sit{display:none}
+.pcat.sitting .p-sit{display:inline}
+.pcat .s-happy,.pcat .s-sleepeyes,.pcat .s-yawn,.pcat .s-tongue,.pcat .s-h,.pcat .s-z,.pcat .s-angry{opacity:0}
+.pcat .s-head,.pcat .s-arm,.pcat .s-hind,.pcat .s-eyes,.pcat .s-mouth{transition:transform .4s ease,opacity .25s}
+.pcat .s-happy,.pcat .s-sleepeyes{transition:opacity .25s}
+.pcat .s-head{transform-origin:36px 24px}
+.pcat .s-arm-l{transform-origin:31.5px 45px}.pcat .s-arm-r{transform-origin:40.5px 45px}
+.pcat .s-hind{transform-origin:46.5px 47px}
+.pcat .s-body{transform-origin:36px 57px;animation:breathe 3s ease-in-out infinite}
+.pcat .s-tail{transform-origin:48px 54px;animation:tailWag 1.8s ease-in-out infinite}
+.pcat .blink{transform-box:fill-box;transform-origin:center;animation:catBlink 4.5s infinite}
+@keyframes breathe{50%{transform:scale(1.014,1.02)}}
+@keyframes tailWag{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(9deg)}}
+@keyframes catBlink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+/* acts */
+.pcat.act-lick .s-arm-r{animation:lickArm .45s ease-in-out infinite alternate}
+.pcat.act-lick .s-tongue{animation:tongue .45s ease-in-out infinite alternate}
+.pcat.act-lick .s-head{animation:headTilt .9s ease-in-out infinite alternate}
+@keyframes lickArm{from{transform:rotate(158deg)}to{transform:rotate(172deg)}}
+@keyframes tongue{from{opacity:0}to{opacity:1}}
+@keyframes headTilt{from{transform:rotate(-4deg)}to{transform:rotate(-9deg)}}
+.pcat.act-scratch .s-head{transform:rotate(9deg)}
+.pcat.act-scratch .s-eyes{opacity:0}.pcat.act-scratch .s-happy{opacity:1}
+.pcat.act-scratch .s-hind{animation:scratch .16s linear infinite alternate}
+@keyframes scratch{from{transform:translate(2px,-14px) rotate(-118deg)}to{transform:translate(3px,-14px) rotate(-142deg)}}
+.pcat.act-love .s-eyes{opacity:0}.pcat.act-love .s-happy{opacity:1}
+.pcat.act-love .s-head{animation:sway 1s ease-in-out infinite alternate}
+.pcat.act-love .s-body{animation:purr .12s linear infinite alternate}
+.pcat.act-love .s-h{animation:heartUp 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.pcat.act-love .hh2{animation-delay:.5s}.pcat.act-love .hh3{animation-delay:1s}
+@keyframes sway{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+@keyframes purr{from{transform:translateY(0)}to{transform:translateY(-.5px)}}
+@keyframes heartUp{0%{opacity:0;transform:translateY(4px) scale(.5)}20%{opacity:1}100%{opacity:0;transform:translateY(-14px) scale(1.3)}}
+.pcat.act-yawn .s-eyes,.pcat.act-yawn .s-mouth{opacity:0}.pcat.act-yawn .s-happy{opacity:1}
+.pcat.act-yawn .s-head{transform:translateY(-1.5px) rotate(-4deg)}
+.pcat.act-yawn .s-yawn{animation:yawn 2s ease-in-out forwards;transform-box:fill-box;transform-origin:center top}
+@keyframes yawn{0%{opacity:0;transform:scaleY(.2)}25%,70%{opacity:1;transform:scaleY(1.25)}100%{opacity:0;transform:scaleY(.2)}}
+.pcat.act-sleep .s-eyes{opacity:0}.pcat.act-sleep .s-sleepeyes{opacity:1}
+.pcat.act-sleep .s-head{transform:translateY(4px) rotate(7deg)}
+.pcat.act-sleep .s-body{animation-duration:4s}
+.pcat.act-sleep .s-z{animation:zFloat 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.pcat.act-sleep .zz2{animation-delay:1.1s}
+@keyframes zFloat{0%{opacity:0;transform:translate(0,3px) scale(.6)}25%{opacity:1}100%{opacity:0;transform:translate(4px,-12px) scale(1.2)}}
+.pcat.act-wave .s-arm-l{animation:wave .35s ease-in-out infinite alternate}
+.pcat.act-wave .s-head{transform:rotate(-4deg)}
+@keyframes wave{from{transform:rotate(150deg)}to{transform:rotate(178deg)}}
+.pcat .s-angry{transition:opacity .15s}
+.pcat .s-angry path{fill:none;stroke:#ff4d4d;stroke-width:1.8;stroke-linecap:round}
+.pcat .mcat .s-grr{fill:#ff4d4d}
+.pcat.act-angry .s-angry{opacity:1}
+.pcat.act-angry .s-eyes{transform:scaleY(.6);transform-box:fill-box;transform-origin:center}
+.pcat.act-angry .mcat .s-eyes .eye{fill:#ff4d4d}
+.pcat.act-angry .s-mouth{opacity:0}
+.pcat.act-angry .s-head,.pcat.act-angry .s-body{animation:angryShake .07s linear infinite alternate}
+.pcat.act-angry .s-tail{animation:tailLash .2s ease-in-out infinite alternate}
+.pcat.act-angry .s-vein{animation:veinPulse .3s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+@keyframes angryShake{from{transform:translateX(-1.2px)}to{transform:translateX(1.2px)}}
+@keyframes tailLash{from{transform:rotate(-22deg)}to{transform:rotate(26deg)}}
+@keyframes veinPulse{from{transform:scale(.85)}to{transform:scale(1.25)}}
+/* scroll cat */
+#pCat{position:fixed;left:10px;bottom:calc(6px + env(safe-area-inset-bottom,0px));width:72px;z-index:70;will-change:transform;cursor:pointer;-webkit-tap-highlight-color:transparent}
+#pCat .flip{width:100%}
+#pCat .flip.left{transform:scaleX(-1)}
+@media(prefers-reduced-motion:reduce){.pcat *{animation:none!important}.gate-cat.in{transition:none}}

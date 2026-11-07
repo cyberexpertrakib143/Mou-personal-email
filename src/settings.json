@@ -1,0 +1,226 @@
+{
+  "name": "rX Abdullah",
+  "version": "rX API",
+  "description": "Simple and Easy-to-Use API Documentation",
+  "header": {
+    "status": "Online!",
+    "imageSrc": [
+      "https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUycTNiaWY3N3YzMDQ4OHRtZHltZXdpNXU2NHV2a2FicGNmZTVvMHZ1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TiPCO8vJ8INyJ9x69c/giphy.gif"
+    ],
+    "imageSize": {
+      "mobile": "58%",
+      "tablet": "30%",
+      "desktop": "20%"
+    }
+  },
+  "apiSettings": {
+    "creator": "rX"
+  },
+  "links": [
+    {
+      "name": "Contact Me",
+      "url": "https://wa.me/message/ZK73V6OFSA2IA1"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Random",
+      "items": [
+        {
+          "name": "Blue Archive",
+          "desc": "Blue Archive Random Images",
+          "path": "/random/ba"
+        }
+      ]
+    },
+    {
+      "name": "Search Tools",
+      "items": [
+        {
+          "name": "YouTube",
+          "desc": "Video search",
+          "path": "/search/youtube?q="
+        },
+        {
+          "name": "Pinterest Images",
+          "desc": "Search Pinterest images",
+          "path": "/pinterest/img?quary=&limit=10",
+          "innerDesc": "limit: 1-10. Download a result via /search/pinterest/download?url="
+        },
+        {
+          "name": "Pinterest Videos",
+          "desc": "Search Pinterest videos",
+          "path": "/pinterest/video?quary=&limit=10",
+          "innerDesc": "limit: 1-10. Download a result via /search/pinterest/download?url="
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "items": [
+        {
+          "name": "Free Fire Info",
+          "desc": "Get full Free Fire player info by UID",
+          "path": "/game/ffinfo?uid="
+        }
+      ]
+    },
+    {
+      "name": "Fun",
+      "items": [
+        {
+          "name": "Simsimi",
+          "desc": "Chat with the Simsimi AI",
+          "path": "/fun/simsimi?text=&senderID=&threadID=&senderName=",
+          "innerDesc": "senderID, threadID, senderName are optional"
+        }
+      ]
+    }
+  ],
+  "profile": {
+    "tagline": "Independent Developer · Bot & API Builder",
+    "bio": "I build Messenger bots, backend APIs, SMM panels and payment gateway systems — everything shipped straight from my phone.",
+    "details": [
+      {
+        "icon": "fa-solid fa-cake-candles",
+        "label": "Age",
+        "value": "18+"
+      },
+      {
+        "icon": "fa-solid fa-location-dot",
+        "label": "Location",
+        "value": "Rajshahi, Bangladesh"
+      },
+      {
+        "icon": "fa-solid fa-graduation-cap",
+        "label": "Education",
+        "value": "Intermediate, Rajshahi College"
+      },
+      {
+        "icon": "fa-solid fa-code",
+        "label": "Focus",
+        "value": "Full Stack Development"
+      },
+      {
+        "icon": "fa-solid fa-bullseye",
+        "label": "Interests",
+        "value": "Coding · Bots · APIs"
+      },
+      {
+        "icon": "fa-solid fa-mobile-screen",
+        "label": "Setup",
+        "value": "Codes 100% from mobile"
+      }
+    ],
+    "about": {
+      "title": "About me",
+      "sub": "A builder at heart.",
+      "paragraphs": [
+        "I'm rX Abdullah, an independent full stack developer based in Rajshahi, Bangladesh. I'm currently studying at Rajshahi College at the intermediate level.",
+        "I mostly work with Node.js, Express and MongoDB, and everything I ship, from Messenger bots to payment gateways, is built and deployed straight from my phone.",
+        "Behind the APIs on this page is a suite of connected projects: MariPay, MariaSMM, MiraiStore, Maria-fca and JARVIS, plus Messenger, imo and Free Fire bots serving a Bangladeshi audience. I enjoy creating things that solve real problems for developers and everyday users."
+      ]
+    }
+  },
+  "skills": [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "JavaScript",
+    "REST APIs",
+    "Messenger Bots",
+    "Payment Gateways",
+    "Vercel",
+    "Render",
+    "Kotlin",
+    "PostgreSQL"
+  ],
+  "projects": [
+    {
+      "icon": "fa-solid fa-credit-card",
+      "name": "MariPay",
+      "url": "",
+      "desc": "SMS-based payment gateway for bKash & Nagad with web and Android clients.",
+      "tags": [
+        "Node.js",
+        "Android",
+        "Payments"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-rocket",
+      "name": "MariaSMM",
+      "url": "",
+      "desc": "SMM panel with payments, 2FA and automatic provider sync.",
+      "tags": [
+        "Express",
+        "MongoDB",
+        "2FA"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-store",
+      "name": "MiraiStore",
+      "url": "",
+      "desc": "Command store for GoatBot & Mirai Messenger bots.",
+      "tags": [
+        "Express",
+        "MongoDB",
+        "Bots"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-comments",
+      "name": "Imo-bot",
+      "platform": "Imo",
+      "url": "",
+      "desc": "Imo chatbot",
+      "tags": [
+        "Bots", 
+        "Node.js"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-comments",
+      "name": "Maria-fca",
+      "platform": "Messenger",
+      "url": "",
+      "desc": "Custom Facebook Chat API library published on npm.",
+      "tags": [
+        "npm"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-robot",
+      "name": "JARVIS",
+      "url": "",
+      "desc": "AI agent backend wired into the bot framework.",
+      "tags": [
+        "AI",
+        "Node.js"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-comment-dots",
+      "name": "Hopenity Bot",
+      "platform": "Hopenity",
+      "url": "",
+      "desc": "A free hopenity bot with ready-to-use commands.",
+      "tags": [
+        "Bots",
+        "Node.js"
+      ]
+    },
+    {
+      "icon": "fa-solid fa-gamepad",
+      "name": "Free Fire Bot",
+      "platform": "Free Fire",
+      "url": "",
+      "desc": "A free Free Fire bot for player info lookups and utilities.",
+      "tags": [
+        "Bots",
+        "API"
+      ]
+    }
+  ]
+}

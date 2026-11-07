@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5f6f9" />
+    <meta name="description" content="Full Stack Developer portfolio and interactive API documentation for Rx Abdullah." />
+    <meta property="og:title" content="Rx Abdullah Portfolio & API" />
+    <meta property="og:description" content="Full Stack Developer portfolio and interactive API documentation for Rx Abdullah." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="/src/icon.png" type="image/png" />
+    <title id="page">Rx Abdullah Portfolio &amp; API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/portfolio.css" />
+</head>
+<body>
+    <!-- Hidden direct asset references -->
+    <img src="/assets/aistudio/file_00000000efcc821197260afa1794d2d6_35791a92.png" alt="Rx Abdullah Reference" style="display:none;" referrerPolicy="no-referrer" />
+    <img src="/assets/aistudio/Screenshot_20261107_202228_152cb647.jpg" alt="Viewport Reference" style="display:none;" referrerPolicy="no-referrer" />
+
+    <div class="rx-page-shell">
+        <!-- Unified Top Header + Hero Zone with seamless full-bleed portrait backdrop -->
+        <div class="rx-top-hero-zone">
+            <img
+                id="dynamicImage"
+                src="/assets/aistudio/hero_full_bg.png"
+                alt="Rx Abdullah - Full Stack Developer"
+                class="rx-hero-bg-img"
+                referrerPolicy="no-referrer"
+            />
+
+            <!-- Top Navigation Bar -->
+            <header class="rx-topbar">
+                <a href="#hero" class="rx-brand" aria-label="Rx Abdullah Home">
+                    <span class="rx-logo-mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 56" width="40" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 42V14C8 9.5 11.8 6 17.5 6H29C35.5 6 40 10.2 40 16.5C40 22.8 35.5 27 29 27H15" stroke="#0a0a0a" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M27 27L42 49" stroke="#0a0a0a" stroke-width="6.5" stroke-linecap="round"/>
+                            <path d="M35 22L56 50" stroke="#0a0a0a" stroke-width="6.5" stroke-linecap="round"/>
+                            <path d="M55 22L33 50" stroke="#0a0a0a" stroke-width="6.5" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="rx-brand-divider" aria-hidden="true"></span>
+                    <span id="header" class="rx-brand-name">Rx Abdullah</span>
+                </a>
+
+                <nav class="rx-desktop-nav" aria-label="Primary Navigation">
+                    <a href="#aboutSection">About</a>
+                    <a href="#skillsSection">Skills</a>
+                    <a href="#projectsSection">Projects</a>
+                    <a href="#apiSection" id="topApiNavBtn">APIs</a>
+                    <a href="#contactSection">Contact</a>
+                </nav>
+
+                <button type="button" id="menuToggleBtn" class="rx-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="rx-bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </header>
+
+            <!-- Slide-down Quick Navigation Menu -->
+            <div id="mobileNavDrawer" class="rx-nav-drawer" hidden>
+                <a href="#hero" class="rx-drawer-link">Home</a>
+                <a href="#aboutSection" class="rx-drawer-link">About Me</a>
+                <a href="#skillsSection" class="rx-drawer-link">My Skills</a>
+                <a href="#projectsSection" class="rx-drawer-link">My Projects</a>
+                <a href="#apiSection" class="rx-drawer-link" data-open-apis="true">My APIs (Live Playground)</a>
+                <a href="#contactSection" class="rx-drawer-link">Get In Touch</a>
+            </div>
+
+            <!-- Hero Section -->
+            <section id="hero" class="rx-hero">
+                <div class="rx-hero-left">
+                    <div class="rx-hello-pill">
+                        <span class="rx-wave" role="img" aria-label="Wave">👋</span>
+                        <span>Hello, I'm</span>
+                        <span class="rx-pill-dot" aria-hidden="true"></span>
+                    </div>
+
+                    <div id="nameContainer">
+                        <h1 id="name">Rx Abdullah</h1>
+                    </div>
+
+                    <p id="role" class="rx-role">Full Stack Developer</p>
+                    <div class="rx-role-underline" aria-hidden="true"></div>
+
+                    <p id="description" class="rx-hero-desc">
+                        I build modern web &amp; mobile<br />applications with passion.
+                    </p>
+
+                    <div class="rx-hero-cta">
+                        <a href="#projectsSection" class="rx-btn rx-btn-dark">
+                            <span class="rx-code-tag">&lt;/&gt;</span>
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="#contactSection" class="rx-btn rx-btn-light">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <div class="rx-social-row" aria-label="Social Media Links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="rx-social-btn" aria-label="GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="rx-social-btn" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="rx-social-btn" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="rx-social-btn" aria-label="Telegram">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="rx-social-btn" aria-label="X">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="rx-cards-container">
+            <!-- About Me Card -->
+            <section id="aboutSection" class="rx-card rx-about-card">
+                <div class="rx-about-main">
+                    <div class="rx-about-media">
+                        <img
+                            src="/assets/aistudio/about_illus.png"
+                            alt="Developer with laptop illustration"
+                            class="rx-about-illus"
+                            referrerPolicy="no-referrer"
+                        />
+                    </div>
+                    <div class="rx-about-divider" aria-hidden="true"></div>
+                    <div class="rx-about-body">
+                        <div class="rx-sec-heading">
+                            <h2 id="aboutTitle">About Me</h2>
+                            <span class="rx-heading-line" aria-hidden="true"></span>
+                        </div>
+                        <p id="aboutLeadText" class="rx-about-copy">
+                            I'm a passionate Full Stack Developer who loves to build beautiful and functional web applications. I always try to learn new technologies.
+                        </p>
+                        <button type="button" id="learnMoreBtn" class="rx-btn rx-btn-dark rx-btn-compact" aria-expanded="false">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Expandable full profile & details from settings.json -->
+                <div id="aboutExpanded" class="rx-about-expanded" hidden>
+                    <div id="aboutText" class="rx-about-paragraphs"></div>
+                    <div id="aboutGrid" class="rx-about-details-grid"></div>
+                </div>
+            </section>
+
+            <!-- My Skills Card -->
+            <section id="skillsSection" class="rx-card rx-skills-card">
+                <div class="rx-card-header">
+                    <div class="rx-sec-heading">
+                        <i class="fa-solid fa-bolt rx-sec-icon" aria-hidden="true"></i>
+                        <h2>My Skills</h2>
+                        <span class="rx-heading-line" aria-hidden="true"></span>
+                    </div>
+                    <button type="button" id="allSkillsBtn" class="rx-outline-pill" aria-expanded="false">
+                        <span>All Skills</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="rx-skills-grid" id="coreSkillsGrid">
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-badge rx-badge-dark">JS</span>
+                        <span class="rx-skill-name">JavaScript</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></span>
+                        <span class="rx-skill-name">React.js</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon">
+                            <svg viewBox="0 0 28 28" width="22" height="22" fill="none" aria-hidden="true">
+                                <path d="M14 2L25 8.3V19.7L14 26L3 19.7V8.3L14 2Z" stroke="#0a0a0a" stroke-width="2.3"/>
+                                <text x="14" y="17" text-anchor="middle" fill="#0a0a0a" font-size="8.5" font-weight="800" font-family="Plus Jakarta Sans, sans-serif">JS</text>
+                            </svg>
+                        </span>
+                        <span class="rx-skill-name">Node.js</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-badge rx-badge-circle">ex</span>
+                        <span class="rx-skill-name">Express.js</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+                        <span class="rx-skill-name">MongoDB</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></span>
+                        <span class="rx-skill-name">HTML5</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></span>
+                        <span class="rx-skill-name">CSS3</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon">
+                            <svg viewBox="0 0 28 28" width="21" height="21" fill="#0a0a0a" aria-hidden="true">
+                                <path d="M14 7C10.3 7 8 8.8 7 12.5C8.4 10.7 10 10 11.9 10.5C13 10.8 13.7 11.6 14.6 12.5C16 13.9 17.6 15.5 21 15.5C24.7 15.5 27 13.7 28 10C26.6 11.8 25 12.5 23.1 12C22 11.7 21.3 10.9 20.4 10C19 8.6 17.4 7 14 7ZM7 15.5C3.3 15.5 1 17.3 0 21C1.4 19.2 3 18.5 4.9 19C6 19.3 6.7 20.1 7.6 21C9 22.4 10.6 24 14 24C17.7 24 20 22.2 21 18.5C19.6 20.3 18 21 16.1 20.5C15 20.2 14.3 19.4 13.4 18.5C12 17.1 10.4 15.5 7 15.5Z"/>
+                            </svg>
+                        </span>
+                        <span class="rx-skill-name">Tailwind CSS</span>
+                    </div>
+                    <div class="rx-skill-item">
+                        <span class="rx-skill-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                        <span class="rx-skill-name">Git &amp; GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Extra skills from settings.json toggled via "All Skills" -->
+                <div id="skillsList" class="rx-extra-skills" hidden></div>
+            </section>
+
+            <!-- My Projects Card -->
+            <section id="projectsSection" class="rx-card rx-projects-card">
+                <div class="rx-card-header">
+                    <div class="rx-sec-heading">
+                        <i class="fa-solid fa-briefcase rx-sec-icon" aria-hidden="true"></i>
+                        <h2>My Projects</h2>
+                        <span class="rx-heading-line" aria-hidden="true"></span>
+                    </div>
+                    <button type="button" id="viewAllProjectsBtn" class="rx-outline-pill" aria-expanded="false">
+                        <span>View All</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- Featured Project Item matching screenshot 1:1 -->
+                <div class="rx-featured-project">
+                    <div class="rx-featured-thumb-wrap">
+                        <img
+                            src="/assets/aistudio/project_smm.png"
+                            alt="SMM Panel Website"
+                            class="rx-featured-thumb"
+                            referrerPolicy="no-referrer"
+                        />
+                    </div>
+                    <div class="rx-featured-info">
+                        <h3>SMM Panel Website</h3>
+                        <p>A modern SMM panel with fast API integration.</p>
+                        <div class="rx-featured-tags">
+                            <span class="rx-tag-pill">Web App</span>
+                            <span class="rx-tag-pill">Node.js</span>
+                        </div>
+                    </div>
+                    <button type="button" id="featuredProjectArrowBtn" class="rx-circle-arrow" aria-label="Explore All Projects &amp; APIs">
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- Expandable full projects list & Live API Playground -->
+                <div id="allProjectsAndApisWrap" class="rx-more-projects-wrap" hidden>
+                    <div id="projectsGrid" class="rx-projects-grid"></div>
+                </div>
+            </section>
+
+            <!-- Interactive API Documentation & Playground -->
+            <section id="apiSection" class="rx-card rx-api-card" hidden>
+                <div class="rx-card-header">
+                    <div class="rx-sec-heading">
+                        <i class="fa-solid fa-terminal rx-sec-icon" aria-hidden="true"></i>
+                        <h2>My APIs</h2>
+                        <span class="rx-heading-line" aria-hidden="true"></span>
+                    </div>
+                    <span id="versionHeader" class="rx-api-status">Online!</span>
+                </div>
+                <p id="apiSubtitle" class="rx-api-sub">Tap GET on any endpoint to try it live</p>
+                <input type="text" id="searchInput" class="rx-search-input" placeholder="Search API endpoints..." />
+                <div id="apiContent" class="rx-api-list"></div>
+            </section>
+
+            <!-- Get In Touch Dark Banner -->
+            <section id="contactSection" class="rx-contact-banner">
+                <div class="rx-contact-left">
+                    <div class="rx-plane-icon" aria-hidden="true">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="rx-contact-copy">
+                        <h2>Get In Touch</h2>
+                        <p>Feel free to contact me anytime.</p>
+                    </div>
+                </div>
+                <div class="rx-contact-divider" aria-hidden="true"></div>
+                <div class="rx-contact-right" id="contactLinks">
+                    <a href="https://wa.me/message/ZK73V6OFSA2IA1" target="_blank" rel="noopener noreferrer" class="rx-send-msg-btn">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="siteFooter" class="rx-footer">
+                <span class="rx-footer-rule" aria-hidden="true"></span>
+                <span id="footerText" class="rx-footer-text">
+                    &copy; 2026 Rx Abdullah. All rights reserved. <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                </span>
+                <span class="rx-footer-rule" aria-hidden="true"></span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- API Response Modal -->
+    <div class="modal fade" id="apiResponseModal" tabindex="-1" aria-labelledby="apiResponseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" id="modalDialog">
+            <div class="modal-content rx-modal-content">
+                <div class="modal-header rx-modal-header">
+                    <div>
+                        <h5 class="modal-title" id="apiResponseModalLabel"></h5>
+                        <p class="modal-desc mb-0" id="apiResponseModalDesc"></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <pre id="apiEndpoint" class="rx-code-box d-none"></pre>
+                    <div id="apiQueryInputContainer"></div>
+                    <div id="apiResponseLoading" class="d-none d-flex justify-content-center align-items-center" style="height: 100px;">
+                        <div class="spinner-border text-dark" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <pre id="apiResponseContent" class="rx-code-box d-none mt-2"></pre>
+                </div>
+                <div class="modal-footer rx-modal-footer">
+                    <button id="submitQueryBtn" class="rx-btn rx-btn-dark">Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="/portfolio.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

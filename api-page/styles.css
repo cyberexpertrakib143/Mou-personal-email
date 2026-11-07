@@ -1,0 +1,228 @@
+:root {
+    --rx-bg: #f5f6f9;
+    --rx-card: #ffffff;
+    --rx-text: #0b0d12;
+    --rx-muted: #374151;
+    --rx-subtle: #6b7280;
+    --rx-pill-bg: #f1f2f6;
+    --rx-border: rgba(15, 23, 42, 0.05);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--rx-bg);
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--rx-bg);
+    color: var(--rx-text);
+    font-family: 'Plus Jakarta Sans', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.rx-page-shell {
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: var(--rx-bg);
+    overflow: hidden;
+}
+
+/* Unified Top Header + Hero Zone */
+.rx-top-hero-zone {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 862 / 695;
+    min-height: 305px;
+    padding: 12px 16px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.rx-hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.rx-cards-container {
+    position: relative;
+    z-index: 3;
+    padding: 0 12px 26px;
+    margin-top: -2px;
+}
+
+/* Top Navigation Bar */
+.rx-topbar {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.rx-brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--rx-text);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.rx-brand:hover {
+    color: var(--rx-text);
+}
+
+.rx-logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rx- logo-mark svg {
+    display: block;
+}
+
+.rx-brand-divider {
+    width: 1.5px;
+    height: 24px;
+    background-color: #6b7280;
+    opacity: 0.55;
+    margin: 0 11px;
+}
+
+.rx-brand-name {
+    font-size: clamp(17px, 4.6vw, 22px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0a0a0a;
+}
+
+.rx-desktop-nav {
+    display: none;
+}
+
+.rx-menu-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.rx-bars {
+    width: 18px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rx-bars span {
+    display: block;
+    width: 100%;
+    height: 2.2px;
+    background-color: #111111;
+    border-radius: 2px;
+}
+
+/* Quick Navigation Drawer */
+.rx-nav-drawer {
+    position: absolute;
+    top: 58px;
+    left: 14px;
+    right: 14px;
+    z-index: 30;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+    border: 1px solid var(--rx-border);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.rx-nav-drawer[hidden] {
+    display: none !important;
+}
+
+.rx-drawer-link {
+    padding: 9px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #111827;
+    text-decoration: none;
+    background: #f8f9fb;
+}
+
+.rx-drawer-link:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+/* Modal styling */
+.rx-modal-content {
+    background: #ffffff;
+    color: #111827;
+    border-radius: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+    padding: 6px;
+}
+
+.rx-modal-header {
+    border-bottom: 1px solid #f1f2f6;
+}
+
+.rx-modal-header .modal-title {
+    font-weight: 800;
+    color: #0b0d12;
+}
+
+.rx-modal-header .modal-desc {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.rx-code-box {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 12.5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+}
+
+.rx-modal-footer {
+    border-top: 1px solid #f1f2f6;
+}

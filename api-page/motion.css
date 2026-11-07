@@ -1,0 +1,83 @@
+/* Solo Tilt style motion layer */
+
+#tiltStage {
+    perspective: 1100px;
+    perspective-origin: 50% 40%;
+}
+
+#tiltInner {
+    transform-style: preserve-3d;
+    transform-origin: 50% 30%;
+    backface-visibility: hidden;
+}
+
+/* depth layers are translated by motion.js; keep them composited */
+#dynamicImage,
+#nameContainer,
+#role,
+#description,
+#apiLinks {
+    will-change: transform;
+}
+
+/* ---- scroll reveal (replays): cards slide in from the sides ---- */
+body.motion-ready .reveal-side.reveal > * {
+    opacity: 0;
+    translate: var(--sx, -115%) 0;
+    transition: translate 0.85s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0ms),
+                opacity 0.6s ease var(--d, 0ms),
+                box-shadow 0.25s ease, border-color 0.25s ease,
+                transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+body.motion-ready .reveal-side.reveal[data-from="left"] > * { --sx: -115%; }
+body.motion-ready .reveal-side.reveal[data-from="right"] > * { --sx: 115%; }
+body.motion-ready .reveal-side.reveal.is-in > * {
+    opacity: 1;
+    translate: 0 0;
+}
+
+body.motion-ready .category-header.reveal,
+body.motion-ready .reveal-up.reveal {
+    opacity: 0;
+    translate: 0 40px;
+    transition: opacity 0.7s ease var(--d, 0ms),
+                translate 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0ms);
+}
+body.motion-ready .category-header.reveal { translate: -40px 0; }
+body.motion-ready .category-header.reveal.is-in,
+body.motion-ready .reveal-up.reveal.is-in {
+    opacity: 1;
+    translate: 0 0;
+}
+
+/* ---- API card hover / tilt ---- */
+.api-item {
+    transform-style: preserve-3d;
+}
+
+.api-item .hero-section {
+    --rx: 0deg;
+    --ry: 0deg;
+    transform: rotateX(var(--ry)) rotateY(var(--rx)) translateZ(0);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease,
+                transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.api-item:hover .hero-section {
+    border-color: rgba(0, 255, 0, 0.85);
+    box-shadow: 0 20px 44px rgba(0, 255, 0, 0.3);
+}
+
+.api-item:hover .get-api-btn {
+    box-shadow: 0 0 22px rgba(0, 255, 0, 0.75);
+}
+
+@media (hover: none) and (pointer: coarse) {
+    /* real touch devices have no cursor - skip the card tilt affordance */
+    .api-item .hero-section {
+        transform: none;
+    }
+}
+
+/* stacked API cards: no side-slide reveal, no tilt (they overlap) */
+body.motion-ready .api-item.reveal-side.reveal > * { opacity: 1; translate: none; }
