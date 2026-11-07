@@ -1,185 +1,104 @@
-# rX Abdullah API
+<div align="center">
 
-![Layout](https://files.catbox.moe/9qpys9.png)
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&pause=500&color=00FFD1&center=true&vCenter=true&width=800&lines=🤖+Goat+Bot+V2+—+by+𝐌𝐞𝐡𝐞𝐝𝐢+𝐇𝐚𝐬𝐚𝐧+🐐" alt="Goat Bot V2"/>
+  </p>
 
-rX Abdullah API is a simple and easy-to-use API documentation interface built with Express.js. It allows developers to quickly set up and view API documentation with customizable settings using a `settings.json` file. 
+  <p align="center" style="margin-top:15px; margin-bottom: 10px;">
+    <img src="https://img.shields.io/badge/Version-v2.0-blue?style=for-the-badge&logo=github&labelColor=1F2428" alt="Version"/>
+    <img src="https://img.shields.io/badge/Status-Online-brightgreen?style=for-the-badge&logo=messenger&labelColor=1F2428" alt="Status"/>
+    <img src="https://img.shields.io/badge/License-Custom-red?style=for-the-badge&logo=opensourceinitiative&labelColor=1F2428" alt="License"/>
+    <img src="https://img.shields.io/badge/Language-Node.js-informational?style=for-the-badge&logo=nodedotjs&labelColor=1F2428" alt="Language"/>
+  </p>
+  <img src="https://i.imgur.com/j28G40I.jpeg" width="600" style="border-radius:50%;margin-top:10px;margin-bottom:10px;" alt="𝐌𝐄𝐇𝐄𝐃𝐈 𝐇𝐀𝐒𝐀𝐍"/>
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/rynxzyy/Rynn-UI)
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00C4FF&center=true&vCenter=true&width=580&lines=🚀+Goat+Bot+V2+Reloaded;⚡+Built+by+𝐌𝐞𝐡𝐞𝐝𝐢+𝐇𝐚𝐬𝐚𝐧;💫+Fast%2C+Smart+%26+Reliable;💥+Messenger+Bot+Evolution" alt="sub"/>
+  </p>
 
-## Features
-- Simple API documentation interface
-- Easily customizable with a `settings.json` file
-- Categorized APIs for easy navigation
-- Includes real-time settings such as name, version, description, and creator
-- Supports image display in the UI for branding
-- Links to external resources such as source code and contact info
+  <hr style="width:90%;opacity:0.2"/>
 
-## Live Demo
+  <h2>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2500&color=00FFD1&center=true&vCenter=true&width:760&lines=🌟+About;Goat+Bot+V2+—+A+next-level+Facebook+Messenger+bot,+redefined+by+𝐌𝐞𝐡𝐞𝐝𝐢+𝐇𝐚𝐬𝐚𝐧." alt="about-typing" />
+  </h2>
 
-Check out a live demo of Rynn UI [here](https://rynnn-ui.vercel.app)
+  <h3>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=4000&pause=400&color=FFB86B&center=true&vCenter=true&width:760&lines=🛠+Features" alt="features-title"/>
+  </h3>
 
-## Setup
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3500&pause=300&color=FFFFFF&center=true&vCenter=true&width:760&lines=🚀+Auto+Reply+%26+Smart+Commands;🎭+Welcome+%2F+Leave+System;📦+Custom+Commands;🕹️+Admin+Tools+%26+Fun+Features;🌍+Multi-language+Support+(EN,+BN)" alt="features-list"/>
+  </p>
+  
+  <hr style="width:80%;opacity:0.12"/>
 
-### Prerequisites
-- Node.js (>= 14.0.0)
+  <h3>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2800&pause=300&color=00C4FF&center=true&vCenter=true&width:760&lines=⚙️+Framework+Details" alt="dev-title"/>
+  </h3>
 
-### Installation
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/RynnKunnn/Rynn-UI.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Rynn-UI
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Modify the `settings.json` file to configure your API documentation.
-5. Start the server:
-   ```bash
-   npm start
-   ```
-Your API documentation should now be available at `http://localhost:<PORT>`.
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=3000&pause=200&color=00FFD1&center=true&vCenter=true&width:760&lines=📦+Based+on:+Goat+Bot+V2+Framework;📆+Version:+2.0+(Custom+Edition);🛠️+Built+for:+Facebook+Messenger" alt="dev-lines"/>
+  </p>
 
-## Customization
 
-![Layout](https://files.catbox.moe/bjazqb.png)
+  <p align="center" style="margin-top:20px;">
+    <a href="https://facebook.com/mehedi.hasan.miraz.603" target="_blank">
+      <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/>
+    </a>
+    <a href="https://t.me/mehediofficial630" target="_blank" style="margin-left:8px;">
+      <img src="https://img.shields.io/badge/Telegram-0088CC?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
+    </a>
+    <a href="https://github.com/mehediprojectofficial/Mehedi-Hasan-Miraz.git" target="_blank" style="margin-left:8px;">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    </a>
+    <a href="https://www.youtube.com/@mehedi__offical_____2.00" target="_blank" style="margin-left:8px;">
+      <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
+    </a>
+  </p>
 
-You can easily customize the UI by editing the `settings.json` file. Below is a breakdown of the configurable fields:
+  <hr style="width:80%;opacity:0.12"/>
 
-### General Settings
+  <h3>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2600&pause=300&color=FF6B6B&center=true&vCenter=true&width:760&lines=❤️+Credits" alt="credits-title"/>
+  </h3>
 
-- `name`: Sets the name of your API (e.g., "rX Abdullah").
-- `version`: Specifies the version of your API interface (e.g., "Rynn UI").
-- `description`: A brief description of your API documentation.
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=2800&pause=200&color=FF8C6B&center=true&vCenter=true&width:760&lines=Special+thanks+to+NTKhang+(original+creator)+for+the+base+framework." alt="credits-lines"/>
+  </p>
 
-### Header Customization
+  <hr style="width:80%;opacity:0.12"/>
 
-- `status`: Indicates the current status of your API (e.g., "Online!").
-- `imageSrc`: An array of image URLs to display in the header. Multiple images can be set for variety.
-- `imageSize`: Defines responsive image sizes based on the device type:
-  - `mobile`: Size for mobile devices (e.g., "80%").
-  - `tablet`: Size for tablets (e.g., "40%").
-  - `desktop`: Size for desktops (e.g., "40%").
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00FFD1&center=true&vCenter=true&width:620&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+𝐌𝐞𝐡𝐞𝐝𝐢+𝐇𝐚𝐬𝐚𝐧;Follow+on+FB+and+TG+for+updates!" alt="cta" />
+  </p>
+  
+  <hr style="width:80%;opacity:0.12"/>
 
-### Api Settings
+  <h3>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=200&color=FFD700&center=true&vCenter=true&width:760&lines=💬+Join+The+Official+Support+Group" alt="group-title"/>
+  </h3>
 
-- `creator`: Displays the creator's name in the interface.
+  <p align="center" style="margin-top:10px;">
+    <a href="https://m.me/j/AbaLu1kVZB8R-vLR/" target="_blank">
+      <img src="https://img.shields.io/badge/Join_Messenger_Group-0078FF?style=for-the-badge&logo=facebook-messenger&logoColor=white" alt="Messenger Group Link"/>
+    </a>
+  </p>
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration:2500&pause=500&color=00FFD1&center=true&vCenter=true&width:760&lines=Get+Instant+Support,+Updates+%26+Chat+Directly+with+the+Developer!" alt="group-cta-text"/>
+  </p>
+  
+  <hr style="width:80%;opacity:0.12"/>
+  <h3>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration:2800&pause=300&color=FF8C6B&center=true&vCenter=true&width:760&lines=💖+Owner+Details;%23+The+Man+Behind+the+Bot" alt="owner-details-title"/>
+  </h3>
 
-### Links
+  <p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration:3000&pause=200&color=FFFFFF&center=true&vCenter=true&width:760&lines=👤+Name:+𝐌𝐞𝐡𝐞𝐝𝐢+𝐇𝐚𝐬𝐚𝐧;🚹+Gender:+Male;❤️+Relation:+Single;🎂+Age:+18𝐏𝐥𝐮𝐬;🕌+Religion:+Islam;🎓+Education:+Inter+2nd+Year;🏡+Address:+Dhaka-Gazipur" alt="owner-details-lines"/>
+  </p>
+  <p align="center" style="margin-top:10px;">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=14&duration:2200&pause=200&color=FFFFFF&center=true&vCenter=true&width:760&lines=⚡+Ready+to+use+%7C+Premium+style+available+%7C+Contact:+@arakashiam" alt="footer-typing"/>
+  </p>
 
-- `name`: Label for the link (e.g., "Source Code").
-- `url`: The URL to the resource.
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=footer" style="margin-top:14px;"/>
 
-### Categories and Apis
-
-Organize APIs into categories for better navigation:
-- **Category Name (e.g., "AI (Artificial Intelligence)")**
-  - `items`: Define individual APIs within the category.
-    - `name`: The name of the API (e.g., "LuminAI").
-    - `desc`: A short description of the API (e.g., "Talk with luminai").
-    - `path`: The endpoint path for the API (e.g., /ai/luminai?text=).
-
-### Example `settings.json`
-
-Here’s an example of how your settings.json file might look:
-```json
-{
-  "name": "rX Abdullah",
-  "version": "rX API",
-  "description": "Simple and Easy-to-Use API Documentation",
-  "header": {
-    "status": "Online!",
-    "imageSrc": [
-      "https://media4.giphy.com/media/l0Iy33dWjmywkCnNS/giphy.gif?cid=6c09b952p3mt40j1mgznfi9rwwtccbjl7mtc2kvfugymeinr&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
-    ],
-    "imageSize": {
-      "mobile": "80%",
-      "tablet": "40%",
-      "desktop": "40%"
-    }
-  },
-  "apiSettings": {
-    "creator": "rX Abdullah"
-  },
-  "links": [
-    {
-      "name": "Source Code",
-      "url": "https://github.com/rynxzyy/Rynn-UI"
-    },
-    {
-      "name": "Contact Me",
-      "url": "https://wa.me/6285173370004"
-    }
-  ],
-  "categories": [
-    {
-      "name": "AI (Artificial Intelligence)",
-      "items": [
-        {
-          "name": "LuminAI",
-          "desc": "Talk with luminai",
-          "path": "/ai/luminai?text="
-        },
-        {
-          "name": "HydroMind",
-          "desc": "Talk with hydromind",
-          "path": "/ai/hydromind?text=&model=",
-          "innerDesc": "See the list of supported AI models here: https://mind.hydrooo.web.id"
-        }
-      ]
-    },
-    {
-      "name": "Random",
-      "items": [
-        {
-          "name": "Blue Archive",
-          "desc": "Blue Archive Random Images",
-          "path": "/random/ba"
-        }
-      ]
-    },
-    {
-      "name": "Search Tools",
-      "items": [
-        {
-          "name": "YouTube",
-          "desc": "Video search",
-          "path": "/search/youtube?q="
-        }
-      ]
-    }
-  ]
-}
-```
-This structure allows you to easily adapt and configure the interface to suit your API needs!
-
-# Support
-
-This project is designed to be easily deployable on various platforms. You can host it on any platform that supports Node.js applications. Some popular options include:
-
-- **[Vercel](https://vercel.com/)**: Easy deployment with minimal configuration.
-- **[Heroku](https://www.heroku.com/)**: A platform-as-a-service for deploying, managing, and scaling apps.
-- **[Netlify](https://www.netlify.com/)**: A platform for deploying static sites and serverless functions.
-- **[DigitalOcean](https://www.digitalocean.com/)**: Cloud infrastructure for deploying apps with more control over the environment.
-- **[AWS](https://aws.amazon.com/)**: Amazon Web Services for scalable and customizable cloud hosting.
-- **[Railway](https://railway.app/)**: A platform for deploying apps with easy integration and deployment steps.
-
-Make sure your platform supports Node.js, and configure it to run your API according to the platform’s deployment guidelines.
-
-If you need help with deployment, feel free to reach out to the creator or check the documentation of your chosen platform.
-# Credits
-
-This project is created and maintained by:
-
-- **[Rynn](https://github.com/rynxzyy)**: Creator and main developer of the project.
-- **[Lenwy](https://github.com/Lenwyy)**: For the inspiration behind the project.
-- **[Siputzx](https://github.com/siputzx)**: For providing the LuminAI API.
-
-Special thanks for the support and contributions throughout the development.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+</div>
